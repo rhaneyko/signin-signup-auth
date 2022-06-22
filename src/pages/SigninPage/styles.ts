@@ -15,7 +15,6 @@ export const Title = styled.h1`
     align-self: center;
     color: #000;
 
-    padding-left: 32px;
     padding-top: 10px;
 
     font-size: 2.5rem;
@@ -50,12 +49,11 @@ export const SigninForm = styled.div`
 export const SigninInput = styled.input`
     width: 17vw;
     height: 5vh;
-
-    padding-left: 5px;
+    
+    margin: 15px;
 
     border-radius: 5px;
     border: 1px solid #E5E5E5;
-    margin: 15px;
 
     background-color: ${props => props.theme.colors.inputBackground};
 

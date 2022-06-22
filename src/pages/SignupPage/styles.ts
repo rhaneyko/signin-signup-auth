@@ -19,8 +19,16 @@ export const SignupContainer = styled.div`
 
     width: 20vw;
     height: 55vh;
-    border: 1px solid;
+
+    border-radius: 10px;
+    
     background-color: ${props => props.theme.colors.background};
+
+    transition: box-shadow .3s;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
 `;
 
 export const Title = styled.h1`
