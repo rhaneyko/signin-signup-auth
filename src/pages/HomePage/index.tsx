@@ -1,16 +1,20 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
+import * as C from "./styles";
 
-import {
-    Container,
-    Title,
-} from './styles'
+const HOmePage = () => {
+  const { signout } = useAuth();
+  const navigate = useNavigate();
 
-const HomePage = () => {
   return (
-    <Container>
-        <Title>Home</Title>
-    </Container>
-  )
-}
+    <C.Container>
+      <C.Title>HOmePage</C.Title>
+      <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
+        Sair
+      </Button>
+    </C.Container>
+  );
+};
 
-export default HomePage;
+export default Home;
