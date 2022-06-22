@@ -83,3 +83,8 @@ export const Button = styled.div`
 export const TextButton = styled.p`
 
 `;
+
+export const InputName = styled.div``;
+export const InputEmail = styled.div``;
+export const InputPassword = styled.div``;
+export const InputConfirmPassword = styled.div``;
