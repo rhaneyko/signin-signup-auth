@@ -4,10 +4,10 @@ export const Container = styled.div`
      display: flex;
     justify-content: center;
     align-items: center;
-
+     
     height: 100vh;
 
-    background-color: ${props => props.theme.colors.backgroundContainer};
+    background-color: ${props => props.theme.colors.button};
 
 
 `;
@@ -29,6 +29,11 @@ export const SignupContainer = styled.div`
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
 
+    @media (max-width: 768px) {
+        width: 72vw;
+        height: 65vh;
+    }
+
 `;
 
 export const Title = styled.h1`
@@ -39,6 +44,10 @@ export const Title = styled.h1`
 
     font-size: 2.5rem;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const SignupForm = styled.div`
@@ -48,6 +57,9 @@ export const SignupForm = styled.div`
     justify-content: center;
 
     margin-top: 30px;
+    @media (max-width: 768px) {
+        margin-top: 15px;
+    }
 `;
 
 export const SignupFormInput = styled.input`
@@ -61,9 +73,15 @@ export const SignupFormInput = styled.input`
     border: 1px solid #E5E5E5;
 
     background-color: #E5E5E5;
+
+    @media (max-width: 768px) {
+        width: 60vw;
+
+        margin: 10px;
+    }
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,16 +90,25 @@ export const Button = styled.div`
     height: 5vh;
 
     margin-top: 20px;
-
-    border: 1px solid ${props => props.theme.colors.borderButton};
+    
+    border: 1px solid ${props => props.theme.colors.button};
     border-radius: 5px;
     background-color: ${props => props.theme.colors.button};
+    @media (max-width: 768px) {
+        width: 60vw;
+        height: 6vh;
 
+        margin-top: 25px;
+    }  
 `;
 
 export const TextButton = styled.p`
     color: ${props => props.theme.colors.buttonText};
     font-size: 1.3rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+    }
 
 `;
 

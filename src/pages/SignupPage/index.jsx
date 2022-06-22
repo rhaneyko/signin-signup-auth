@@ -53,7 +53,9 @@ const SignupPage = () => {
         <Title>Criar uma conta</Title>
         <SignupForm>
           <InputName>
-            <p style={{ marginLeft: 15 }}>E-mail</p>
+            <p style={{ marginLeft: 15,
+            
+            }}>E-mail</p>
             <SignupFormInput 
              type={'email'}
              value={email}
