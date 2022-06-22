@@ -1,15 +1,16 @@
 import React from 'react'
+
 import {
     Container,
-    Title
+    Title,
 } from './styles'
 
-const SigninPage = () => {
+const HomePage = () => {
   return (
     <Container>
-        <Title>Sign In</Title>
+        <Title>Home</Title>
     </Container>
   )
 }
 
-export default SigninPage;
+export default HomePage;

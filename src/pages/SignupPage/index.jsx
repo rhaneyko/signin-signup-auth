@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import useAuth from '../../hooks/useAuth'
 
 import {
     Container,
@@ -9,79 +11,81 @@ import {
     InputName,
     InputEmail,
     InputPassword,
-    InputConfirmPassword,
-    Text,
     Button,
     TextButton,
 } from './styles'
 
 
 const SignupPage = () => {
-const form = document.getElementById('form')
-const username = document.getElementById('username');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const confirmPassword = document.getElementById('confirmPassword');
+  const { signup } = useAuth();
+  const navigate = useNavigate()
 
-form.addEventListner('submit', (e) => {
-    e.preventDefault();
+  const [ email, setEmail ] = useState('')
+  const [ emailConfirm, setEmailConfirm ] = useState('')
+  const [ password, setPassword ] = useState('')
+  const [ error, setError ] = useState('')
+  
 
-    checkInputs()
-})
+  
 
-function checkInputs(){
-  const usernameValue = username.value;
-  const emailValue = email.value;
-  const passwordValue = password.value;
-  const confirmPasswordValue = confirmPassword.value;
+  const handleSignup = () => {
+    if (email | !emailConfirm | !password) {
+      setError('Preencha todos os campos')
+      return;
+    } else if (email !== emailConfirm) {
+      setError('Os emails não conferem')
+      return;
+    }
 
-}
+    const res = signup(email, password)
 
-if( usernameValue === '' || emailValue === '' || passwordValue === '' || confirmPasswordValue === '' ){
-  alert('Preencha todos os campos');
-}else {
-  setSuccessFor(username)
-}
+    if (res) {
+      setError(res)
+      return;
+    }
+    alert('Usuário criado com sucesso')
+    navigate('/')
+  }
 
-const formControls = form.querySelectorAll('input')
-
-const formIsValid = [...formControls].every((formControll) => {
-  return formControll.className === 'success'
-})
-
-if(formIsValid){
-  alert('Formulário válido')
-}
-
-function setErrorFor(input){
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-}
   return (
     <Container>
       <SignupContainer>
         <Title>Criar uma conta</Title>
         <SignupForm>
           <InputName>
-            <Text>Nome</Text>
-            <SignupFormInput />
+            <p style={{ marginLeft: 15 }}>E-mail</p>
+            <SignupFormInput 
+             type={'email'}
+             value={email}
+             onChange={(e) => [setEmail(e.target.value), setError('')]}
+            />
           </InputName>
           <InputEmail>
-            <Text>E-mail</Text>
-            <SignupFormInput />
+            <p style={{ marginLeft: 15 }}>Confirme seu E-mail</p>
+            <SignupFormInput 
+              type={'email'}
+              value={emailConfirm}
+             onChange={(e) => [setEmailConfirm(e.target.value), setError('')]}
+            />
           </InputEmail>
           <InputPassword>
-            <Text>Senha</Text>
-            <SignupFormInput />
+            <p style={{ marginLeft: 15 }}>Senha</p>
+            <SignupFormInput 
+              type={'password'}
+              secureTextEntry={true}
+              value={password}
+              onChange={(e) => [setPassword(e.target.value), setError('')]}
+            />
           </InputPassword>
-          <InputConfirmPassword>
-            <Text>Confirmar senha</Text>
-            <SignupFormInput />
-          </InputConfirmPassword>
-
-          <Button>
+          <p style={{color: 'red', fontSize: 15}} >{error}</p>
+          <Button onClick={handleSignup} >
              <TextButton>Criar conta</TextButton>
           </Button>
+          <p style={{ marginTop: 15 }} >Já tem uma conta? 
+           <strong>
+              <Link to={'/'} style={{color: 'black', marginLeft: 5}}>Entre</Link>
+           </strong>
+          </p> 
         </SignupForm>
       </SignupContainer>  
     </Container>

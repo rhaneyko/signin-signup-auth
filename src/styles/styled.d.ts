@@ -7,11 +7,11 @@ export interface DefaultTheme{
           title: string,
           text: string,
           background: string,
-          navBackground: string,
+          backgroundContainer: string,
           button: string,
           buttonText: string,
           borderButton: string,
-          cardBackground: string,
+          inputBackground: string,
         }
   }
 }

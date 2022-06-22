@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
+
+    background-color: ${props => props.theme.colors.backgroundContainer};
 
 
 `;
@@ -14,26 +16,21 @@ export const SignupContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     width: 20vw;
-    height: 60vh;
-    background-color: #344E41;
+    height: 55vh;
+    border: 1px solid;
+    background-color: ${props => props.theme.colors.background};
 `;
 
 export const Title = styled.h1`
-    width: 20vw;
-    height: 10vh;
-
     align-self: center;
     color: #000;
 
-
-    background-color: #E5E5E5;
+    padding-top: 10px;
 
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
 `;
 
 export const SignupForm = styled.div`
@@ -42,26 +39,20 @@ export const SignupForm = styled.div`
     align-items: center;
     justify-content: center;
 
-
+    margin-top: 30px;
 `;
-
-export const Text = styled.p``;
 
 export const SignupFormInput = styled.input`
     width: 17vw;
     height: 5vh;
-
+    
+    margin: 15px;
     padding-left: 5px;
-
-
 
     border-radius: 5px;
     border: 1px solid #E5E5E5;
-    margin: 15px;
 
     background-color: #E5E5E5;
-
-    
 `;
 
 export const Button = styled.div`
@@ -72,15 +63,17 @@ export const Button = styled.div`
     width: 17vw;
     height: 5vh;
 
-    border-radius: 5px;
+    margin-top: 20px;
 
-    margin-top: 50px;
-    background-color: #84a98c;
-     
+    border: 1px solid ${props => props.theme.colors.borderButton};
+    border-radius: 5px;
+    background-color: ${props => props.theme.colors.button};
 
 `;
 
 export const TextButton = styled.p`
+    color: ${props => props.theme.colors.buttonText};
+    font-size: 1.3rem;
 
 `;
 

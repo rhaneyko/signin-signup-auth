@@ -1,15 +1,15 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    title: 'light',
+    title: 'Theme',
 
     colors: {
         title: '#0065FF',
-        text: '#202020',
+        text: '#FFFFFF',
         background: '#FFFFFF',
-        navBackground: '#FFFFFF',
-        button: '#FFFFFF',
-        buttonText: '#0065FF',
+        backgroundContainer: '#e9ecef',
+        button: '#0065FF',
+        buttonText: '#FFFFFF',
         borderButton: '#0065FF',
-        cardBackground: '#FFFFFF',
+        inputBackground: '#E5E5E5',
     },
 };

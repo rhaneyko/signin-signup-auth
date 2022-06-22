@@ -1,10 +1,10 @@
 import { ThemeProvider } from 'styled-components';
-import SignupPage from './pages/SignupPage';
-import Routes from './routes/routes';
+import { AuthProvider } from './contexts/auth';
+import RoutesApp from './routes/routes';
 
 
 import GlobalStyles from './styles/GlobalStyles';
-import light from './styles/themes/light';
+import theme from './styles/theme/theme';
 
  const App = () => {
    //  const [ theme, setTheme ] = useState<DefaultTheme>('theme', light);
@@ -12,9 +12,11 @@ import light from './styles/themes/light';
    //    setTheme(theme.title === 'light' ? dark : light);
    //  }
   return (
-    <ThemeProvider theme={light}>
-       <SignupPage/>
+    <ThemeProvider theme={theme}>
+      <AuthProvider>
+       <RoutesApp/>
        <GlobalStyles/>
+      </AuthProvider>
     </ThemeProvider>
     );
 }
