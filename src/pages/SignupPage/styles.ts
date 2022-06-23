@@ -30,8 +30,8 @@ export const SignupContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 72vw;
-        height: 65vh;
+        width: 92vw;
+        height: 42vh;
     }
 
 `;
@@ -46,7 +46,9 @@ export const Title = styled.h1`
     font-weight: bold;
 
     @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.0rem;
+
+        padding: 5px;
     }
 `;
 
@@ -62,7 +64,7 @@ export const SignupForm = styled.div`
     }
 `;
 
-export const SignupFormInput = styled.input`
+export const SignupInput = styled.input`
     width: 17vw;
     height: 5vh;
     
@@ -75,9 +77,18 @@ export const SignupFormInput = styled.input`
     background-color: #E5E5E5;
 
     @media (max-width: 768px) {
-        width: 60vw;
+        width: 85vw;
+        height: 4vh;
 
         margin: 10px;
+    }
+`;
+
+export const InputText = styled.p`
+    margin-left: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 0.8rem;
     }
 `;
 
@@ -95,10 +106,10 @@ export const Button = styled.button`
     border-radius: 5px;
     background-color: ${props => props.theme.colors.button};
     @media (max-width: 768px) {
-        width: 60vw;
-        height: 6vh;
+        width: 80vw;
+        height: 4vh;
 
-        margin-top: 25px;
+        margin-top: 15px;
     }  
 `;
 
@@ -107,9 +118,8 @@ export const TextButton = styled.p`
     font-size: 1.3rem;
 
     @media (max-width: 768px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
-
 `;
 
 export const InputName = styled.div``;

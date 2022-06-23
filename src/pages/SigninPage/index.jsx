@@ -7,6 +7,7 @@ import {
     SigninContainer,
     SigninForm,
     SigninInput,
+    InputText,
     InputEmail,
     InputPassword,
     Button,
@@ -40,7 +41,7 @@ const SigninPage = () => {
         <Title>Entre</Title>
         <SigninForm>
           <InputEmail>
-            <p style={{ marginLeft: 15 }}>E-mail</p>
+            <InputText style={{ marginLeft: 15 }}>E-mail</InputText>
             <SigninInput 
               type='email'
               value={email}
@@ -48,7 +49,7 @@ const SigninPage = () => {
             />
           </InputEmail>
           <InputPassword>
-            <p style={{ marginLeft: 15 }}>Senha</p>
+            <InputText style={{ marginLeft: 15 }}>Senha</InputText>
             <SigninInput 
               type={'password'}
               onChange={(e) => [setPassword(e.target.value), setError("")]}
