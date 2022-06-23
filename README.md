@@ -5,10 +5,14 @@
 
 ## 🎨 Layout
 
-Página de Login
+##Página de Login
+
 ![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signinScreenshot.jpg)
 
-Pagina de Registro
+
+
+##Pagina de Registro
+
 ![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signupScreenshot.jpg)
 
 ## Tecnologias
