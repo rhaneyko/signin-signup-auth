@@ -76,7 +76,6 @@ export const SigninInput = styled.input`
 
         margin: 10px;
     }
-
 `;
 
 export const InputText = styled.p`
