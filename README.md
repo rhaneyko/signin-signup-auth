@@ -27,7 +27,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Esse projeto foi elaborado para web e mobile.
 Para acessar basta clicar no link abaixo: 
-  [Clique no link](https://sistemasvalidacao.netlify.app)
+https://sistemasvalidacao.netlify.app
 
 
 ## Licença
