@@ -5,7 +5,7 @@
 
 ## 🎨 Layout
 
-![image]('../../src/assets/signinScreenshot.jpg')
+![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signinScreenshot.jpg)
 ![image]('../../src/assets/signupScreenshot.jpg')
 
 ## Tecnologias
