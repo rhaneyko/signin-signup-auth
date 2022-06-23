@@ -25,8 +25,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Como executar o projeto
 
-Esse projeto foi elaborado para web e mobile. Você somente consegue enviar os dados quando todos os campos forem válidos.<br/>
-Para acessar basta clicar no link abaixo:
+Esse projeto foi elaborado para web e mobile.
+Para acessar basta clicar no link abaixo: 
+  [Clique no link](https://sistemasvalidacao.netlify.app)
 
 
 ## Licença
