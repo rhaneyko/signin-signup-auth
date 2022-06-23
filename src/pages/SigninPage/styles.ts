@@ -54,8 +54,6 @@ export const InputText = styled.p`
     margin-left: 5px;
 `;
 
-
-
 export const Button = styled.button`
     display: flex;
     align-items: center;
