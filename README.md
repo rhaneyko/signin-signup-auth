@@ -1,17 +1,17 @@
-# Sistemas de validação 
+# Sistema de autenticação
 
 ## Sobre o Projeto
-  Esse Portifólio foi criado com React. Usei JavaScript, React, TypeScript e Styled Components.
+  Esse Sistema de criação e autenticação de usuário foi criado com React. Utilizei JavaScript, TypeScript e para estilização utilizei Styled Components.
 
 ## 🎨 Layout
 
-##Página de Login
+## Página de Login
 
 ![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signinScreenshot.jpg)
 
 
 
-##Pagina de Registro
+## Pagina de Registro
 
 ![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signupScreenshot.jpg)
 
