@@ -10,7 +10,6 @@ export default createGlobalStyle`
   body{
 
     background-color: ${props => props.theme.colors.background};
-    
     font-family: 'Allerta Stencil', sans-serif;
   }
 `

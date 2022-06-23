@@ -6,11 +6,10 @@ import {
     Container,
     SignupContainer,
     Title,
-    SignupForm,
     SignupInput,
     InputText,
-    InputName,
     InputEmail,
+    InputConfirmEmail,
     InputPassword,
     Button,
     TextButton,
@@ -52,26 +51,28 @@ const SignupPage = () => {
     <Container>
       <SignupContainer>
         <Title>Criar uma conta</Title>
-        <SignupForm>
-          <InputName>
+          <InputEmail>
             <InputText>E-mail</InputText>
             <SignupInput 
+             placeholder='Digite seu e-mail'
              type={'email'}
              value={email}
              onChange={(e) => [setEmail(e.target.value), setError('')]}
             />
-          </InputName>
-          <InputEmail>
+          </InputEmail>
+          <InputConfirmEmail>
             <InputText>Confirme seu E-mail</InputText>
             <SignupInput 
+              placeholder='Digite seu e-mail novamente'  
               type={'email'}
               value={emailConfirm}
              onChange={(e) => [setEmailConfirm(e.target.value), setError('')]}
             />
-          </InputEmail>
+          </InputConfirmEmail>
           <InputPassword>
             <InputText>Senha</InputText>
             <SignupInput 
+              placeholder='Digite sua senha'
               type={'password'}
               secureTextEntry={true}
               value={password}
@@ -87,7 +88,6 @@ const SignupPage = () => {
               <Link to={'/'} style={{color: 'black', marginLeft: 5}}>Entre</Link>
            </strong>
           </p> 
-        </SignupForm>
       </SignupContainer>  
     </Container>
   )

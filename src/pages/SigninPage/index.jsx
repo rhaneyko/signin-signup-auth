@@ -5,7 +5,6 @@ import {
     Container,
     Title,
     SigninContainer,
-    SigninForm,
     SigninInput,
     InputText,
     InputEmail,
@@ -39,18 +38,19 @@ const SigninPage = () => {
     <Container>
         <SigninContainer>
         <Title>Entre</Title>
-        <SigninForm>
           <InputEmail>
-            <InputText style={{ marginLeft: 15 }}>E-mail</InputText>
+            <InputText>E-mail</InputText>
             <SigninInput 
+              placeholder='Digite seu e-mail'
               type='email'
               value={email}
               onChange={(e) => [setEmail(e.target.value), setError("")]}
             />
           </InputEmail>
           <InputPassword>
-            <InputText style={{ marginLeft: 15 }}>Senha</InputText>
+            <InputText>Senha</InputText>
             <SigninInput 
+              placeholder='Digite sua senha'
               type={'password'}
               onChange={(e) => [setPassword(e.target.value), setError("")]}
             />
@@ -65,7 +65,6 @@ const SigninPage = () => {
              <Link to={'/signup'} style={{color: 'black', marginLeft: 5}}>Registre-se</Link>
            </strong>
           </p>
-        </SigninForm>
       </SigninContainer>  
     </Container>
   )
