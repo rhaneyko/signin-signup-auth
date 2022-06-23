@@ -11,9 +11,15 @@
 
 
 
-## Pagina de Registro
+## Página de Registro
 
 ![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signupScreenshot.jpg)
+
+
+
+## Página Home
+
+
 
 ## Tecnologias
 
