@@ -8,8 +8,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${props => props.theme.colors.backgroundContainer};
     font-family: 'Allerta Stencil', sans-serif;
   }
 `
