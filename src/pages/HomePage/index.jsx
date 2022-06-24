@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <Container>
       <HomeContainer>
-        <Title>Home Page</Title>
+        <Title>Home</Title>
         <Button onClick={() => [signout(), navigate("/")]}>
           <TextButton>Sair</TextButton>
         </Button>
