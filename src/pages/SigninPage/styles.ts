@@ -42,7 +42,7 @@ export const SigninInput = styled.input`
     padding-left: 10px;
 
     border-radius: 5px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid ${props => props.theme.colors.inputBorder};
 
     background-color: ${props => props.theme.colors.inputBackground};
 `;

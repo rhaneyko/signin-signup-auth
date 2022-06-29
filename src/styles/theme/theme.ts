@@ -3,13 +3,12 @@ export default {
     title: 'Theme',
 
     colors: {
-        title: '#0065FF',
-        text: '#FFFFFF',
         background: '#FFFFFF',
-        backgroundContainer: '#e9ecef',
-        button: '#0065FF',
+        backgroundContainer: '#F1F2F9',
+        button: '#129490',
         buttonText: '#FFFFFF',
-        borderButton: '#0065FF',
-        inputBackground: '#E5E5E5',
+        borderButton: '#129490',
+        inputBackground: '#FFFFFF',
+        inputBorder: '#129490',
     },
 };
