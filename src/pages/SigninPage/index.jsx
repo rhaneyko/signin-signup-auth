@@ -18,13 +18,13 @@ const SigninPage = () => {
   const { signin } = useAuth();
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleLogin = () => {
     if(!email || !password) {
-      setError("Preencha todos os campos");
+      setError('Preencha todos os campos');
       return;
     }
     const res = signin(email, password);
@@ -44,7 +44,7 @@ const SigninPage = () => {
               placeholder='Digite seu e-mail'
               type='email'
               value={email}
-              onChange={(e) => [setEmail(e.target.value), setError("")]}
+              onChange={(e) => [setEmail(e.target.value), setError('')]}
             />
           </InputEmail>
           <InputPassword>
@@ -52,7 +52,7 @@ const SigninPage = () => {
             <SigninInput 
               placeholder='Digite sua senha'
               type={'password'}
-              onChange={(e) => [setPassword(e.target.value), setError("")]}
+              onChange={(e) => [setPassword(e.target.value), setError('')]}
             />
           </InputPassword>
           <p style={{color: 'red', fontSize: 15}} >{error}</p>
