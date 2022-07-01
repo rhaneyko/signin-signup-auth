@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from 'react';
 
 export const AuthContext = createContext({});
 
@@ -6,8 +6,8 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState();
 
   useEffect(() => {
-    const userToken = localStorage.getItem("user_token");
-    const usersStorage = localStorage.getItem("users_bd");
+    const userToken = localStorage.getItem('user_token');
+    const usersStorage = localStorage.getItem('users_bd');
 
     if (userToken && usersStorage) {
       const hasUser = JSON.parse(usersStorage)?.filter(
@@ -19,31 +19,31 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signin = (email, password) => {
-    const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
+    const usersStorage = JSON.parse(localStorage.getItem('users_bd'));
 
     const hasUser = usersStorage?.filter((user) => user.email === email);
 
     if (hasUser?.length) {
       if (hasUser[0].email === email && hasUser[0].password === password) {
         const token = Math.random().toString(36).substring(2);
-        localStorage.setItem("user_token", JSON.stringify({ email, token }));
+        localStorage.setItem('user_token', JSON.stringify({ email, token }));
         setUser({ email, password });
         return;
       } else {
-        return "E-mail ou senha incorretos";
+        return 'E-mail ou senha incorretos';
       }
     } else {
-      return "Usuário não cadastrado";
+      return 'Usuário não cadastrado';
     }
   };
 
   const signup = (email, password) => {
-    const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
+    const usersStorage = JSON.parse(localStorage.getItem('users_bd'));
 
     const hasUser = usersStorage?.filter((user) => user.email === email);
 
     if (hasUser?.length) {
-      return "Já tem uma conta com esse E-mail";
+      return 'Já existe uma conta com esse E-mail';
     }
 
     let newUser;
@@ -54,14 +54,14 @@ export const AuthProvider = ({ children }) => {
       newUser = [{ email, password }];
     }
 
-    localStorage.setItem("users_bd", JSON.stringify(newUser));
+    localStorage.setItem('users_bd', JSON.stringify(newUser));
 
     return;
   };
 
   const signout = () => {
     setUser(null);
-    localStorage.removeItem("user_token");
+    localStorage.removeItem('user_token');
   };
 
   return (
