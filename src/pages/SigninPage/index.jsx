@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import {
     Container,
@@ -60,11 +60,6 @@ const SigninPage = () => {
           <Button onClick={handleLogin} >
              <TextButton>Entrar</TextButton>
           </Button>
-          <p style={{ marginTop: 15 }} >Não tem uma conta? 
-           <strong>
-             <Link to={'/signup'} style={{color: 'black', marginLeft: 5}}>Registre-se</Link>
-           </strong>
-          </p>
       </SigninContainer>  
     </Container>
   )
