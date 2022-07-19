@@ -5,20 +5,26 @@
 
 ## 🎨 Layout
 
+## Página de Get Started
+
+![image](https://firebasestorage.googleapis.com/v0/b/signin-signup-auth-d7a7b.appspot.com/o/signin-signupScreenshot1.jpg?alt=media&token=c811cace-3676-4965-ac1f-4749f1bc4818)
+
+
+
 ## Página de Login
 
-![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signinScreenshot.jpg)
+![image](https://firebasestorage.googleapis.com/v0/b/signin-signup-auth-d7a7b.appspot.com/o/signin-signupScreenshot2.jpg?alt=media&token=aa895ca0-5a30-42d6-ba6f-297b28045d41)
 
 
 
 ## Página de Registro
 
-![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/signupScreenshot.jpg)
+![image](https://firebasestorage.googleapis.com/v0/b/signin-signup-auth-d7a7b.appspot.com/o/signin-signupScreenshot3.jpg?alt=media&token=c987178d-0976-4acc-b026-aa8d728bf595)
 
 
 
 ## Página Home
-![image](https://github.com/rhaneyko/signin-signup-auth/blob/main/src/assets/homeScreenshot.jpg)
+![image](https://firebasestorage.googleapis.com/v0/b/signin-signup-auth-d7a7b.appspot.com/o/signin-signupScreenshot4.jpg?alt=media&token=7cd9e3e9-c97a-438e-97d2-2d07fd9706bf)
 
 
 
