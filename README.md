@@ -1,7 +1,11 @@
 # Sistema de autenticação
 
 ## Sobre o Projeto
-  Esse Sistema de criação e autenticação de usuário foi criado com React. Utilizei JavaScript, TypeScript e para estilização utilizei Styled Components.
+Este projeto implementa telas de login e registro de usuários com autenticação, utilizando as seguintes tecnologias:
+
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+TypeScript: Superset do JavaScript que adiciona tipagem estática ao código.
+Styled Components: Biblioteca para estilização de componentes no React, permitindo o uso de CSS-in-JS.
 
 ## 🎨 Layout
 
